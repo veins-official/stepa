@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#0a0e13">
+  <title>У Степана — Автосервис | Диагностика, ремонт, шиномонтаж</title>
+  <meta name="description" content="Автосервис «У Степана»: диагностика авто, плановые техработы, шиномонтаж, текущий, средний и капитальный ремонт двигателя. Ул. Адмирала Корнилова, 64, стр. 351. Тел. +7 926 648-83-63.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🔧</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script>document.documentElement.classList.add('js-enabled');</script>
+</head>
+<body>
+  <div class="progress-bar" id="progress"></div>
+
+  <!-- ===== HEADER ===== -->
+  <header class="header" id="header">
+    <div class="container header__inner">
+      <a href="#hero" class="logo">
+        <span class="logo__icon">🔧</span>
+        <span class="logo__text">У Степана</span>
+      </a>
+      <nav class="nav" id="nav" aria-label="Основная навигация">
+        <a href="#services" class="nav__link">Услуги</a>
+        <a href="#repairs" class="nav__link">Ремонт</a>
+        <a href="#other" class="nav__link">Другие работы</a>
+        <a href="#contacts" class="nav__link">Контакты</a>
+        <a href="tel:+79266488363" class="btn btn--primary nav__cta">Позвонить</a>
+      </nav>
+      <button class="burger" id="burger" aria-label="Меню" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- ===== HERO ===== -->
+    <section class="hero" id="hero">
+      <div class="hero__bg" aria-hidden="true">
+        <div class="blob blob--1"></div>
+        <div class="blob blob--2"></div>
+        <div class="blob blob--3"></div>
+        <div class="grid-overlay"></div>
+      </div>
+      <div class="container hero__inner">
+        <div class="hero__content">
+          <span class="badge" data-reveal>Автосервис · Москва</span>
+          <h1 class="hero__title" data-reveal>
+            <span class="gradient-text">У Степана</span>
+          </h1>
+          <p class="hero__subtitle" data-reveal>
+            Диагностика, плановые работы и ремонт любой сложности — от текущего
+            до капитального. Работаем с двигателем, тормозной системой и подвеской.
+          </p>
+          <div class="hero__actions" data-reveal>
+            <a href="#contacts" class="btn btn--primary">Записаться</a>
+            <a href="#services" class="btn btn--ghost">Наши услуги</a>
+          </div>
+          <div class="hero__stats" data-reveal>
+            <div class="stat">
+              <div class="stat__value">3</div>
+              <div class="stat__label">уровня ремонта</div>
+            </div>
+            <div class="stat">
+              <div class="stat__value">100%</div>
+              <div class="stat__label">диагностика</div>
+            </div>
+            <div class="stat">
+              <div class="stat__value">24/7</div>
+              <div class="stat__label">на связи</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="hero__scroll" aria-hidden="true"><span></span></div>
+    </section>
+
+    <!-- ===== SERVICES ===== -->
+    <section class="section" id="services">
+      <div class="container">
+        <div class="section__head">
+          <span class="badge" data-reveal>Услуги</span>
+          <h2 class="section__title" data-reveal>Что мы делаем</h2>
+          <p class="section__lead" data-reveal>Базовые услуги автосервиса — быстро, честно и по регламенту.</p>
+        </div>
+        <div class="cards cards--3">
+          <article class="card" data-reveal>
+            <div class="card__icon">🔍</div>
+            <h3 class="card__title">Диагностика авто</h3>
+            <p class="card__text">Компьютерная и визуальная диагностика двигателя, ходовой и электроники. Находим причину, а не следствие.</p>
+          </article>
+          <article class="card" data-reveal>
+            <div class="card__icon">📋</div>
+            <h3 class="card__title">Плановые технические работы</h3>
+            <p class="card__text">ТО по регламенту пробега или сезону: замена расходников, проверка узлов, подготовка к сезону.</p>
+          </article>
+          <article class="card" data-reveal>
+            <div class="card__icon">🛞</div>
+            <h3 class="card__title">Шиномонтаж</h3>
+            <p class="card__text">Сезонная смена и балансировка колёс, ремонт проколов, хранение шин.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== REPAIRS ===== -->
+    <section class="section section--alt" id="repairs">
+      <div class="container">
+        <div class="section__head">
+          <span class="badge" data-reveal>Ремонт</span>
+          <h2 class="section__title" data-reveal>Три уровня ремонта</h2>
+          <p class="section__lead" data-reveal>От простых работ до полной переборки двигателя.</p>
+        </div>
+        <div class="tiers">
+          <article class="tier" data-reveal>
+            <div class="tier__num">01</div>
+            <h3 class="tier__title">Текущий ремонт</h3>
+            <ul class="tier__list">
+              <li>Замена тормозных колодок</li>
+              <li>Замена ремней навесного оборудования</li>
+              <li>Замена сальников</li>
+              <li>Замена свечей зажигания</li>
+              <li>Чистка форсунок</li>
+            </ul>
+          </article>
+          <article class="tier tier--featured" data-reveal>
+            <div class="tier__num">02</div>
+            <h3 class="tier__title">Средний ремонт</h3>
+            <ul class="tier__list">
+              <li>Шлифовка головки блока цилиндров (ГБЦ)</li>
+              <li>Замена поршневых колец</li>
+              <li>Ремонт турбины</li>
+            </ul>
+          </article>
+          <article class="tier" data-reveal>
+            <div class="tier__num">03</div>
+            <h3 class="tier__title">Капитальный ремонт</h3>
+            <ul class="tier__list">
+              <li>Полная разборка двигателя</li>
+              <li>Замена поршней</li>
+              <li>Замена вкладышей</li>
+              <li>Замена коленчатого вала</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== OTHER WORKS ===== -->
+    <section class="section" id="other">
+      <div class="container">
+        <div class="section__head">
+          <span class="badge" data-reveal>Дополнительно</span>
+          <h2 class="section__title" data-reveal>Другие виды работ</h2>
+          <p class="section__lead" data-reveal>Нестандартные задачи, восстановление и сокращение простоев.</p>
+        </div>
+        <div class="cards cards--3">
+          <article class="card" data-reveal>
+            <div class="card__icon">🚨</div>
+            <h3 class="card__title">Аварийный ремонт</h3>
+            <p class="card__text">Восстановление после ДТП или иного повреждения — часто связано с работами по кузову и геометрии несущей структуры.</p>
+          </article>
+          <article class="card" data-reveal>
+            <div class="card__icon">🗓️</div>
+            <h3 class="card__title">Планово-предупредительный ремонт</h3>
+            <p class="card__text">Работы, приуроченные к регламенту пробега или сезону. Предотвращаем поломки до их появления.</p>
+          </article>
+          <article class="card" data-reveal>
+            <div class="card__icon">🔄</div>
+            <h3 class="card__title">Агрегатный метод</h3>
+            <p class="card__text">Неисправный агрегат заменяем на новый или заранее отремонтированный, а снятый отправляем в ремонт. Сокращает простой техники.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CONTACTS ===== -->
+    <section class="section section--alt" id="contacts">
+      <div class="container">
+        <div class="section__head">
+          <span class="badge" data-reveal>Контакты</span>
+          <h2 class="section__title" data-reveal>Свяжитесь с нами</h2>
+          <p class="section__lead" data-reveal>Приезжайте или напишите — ответим и подскажем.</p>
+        </div>
+        <div class="contacts">
+          <div class="contact-card" data-reveal>
+            <div class="contact-card__icon">📍</div>
+            <div class="contact-card__label">Адрес</div>
+            <div class="contact-card__value">Ул. Адмирала Корнилова, 64, стр. 351</div>
+          </div>
+          <div class="contact-card" data-reveal>
+            <div class="contact-card__icon">📞</div>
+            <div class="contact-card__label">Телефон</div>
+            <a href="tel:+79266488363" class="contact-card__value contact-card__value--link">+7 926 648-83-63</a>
+          </div>
+        </div>
+        <div class="messengers" data-reveal>
+          <!-- TODO: замените на реальный username Telegram -->
+          <a href="https://t.me/+79266488363" class="btn btn--social btn--tg" target="_blank" rel="noopener">Telegram</a>
+          <a href="https://wa.me/79266488363" class="btn btn--social btn--wa" target="_blank" rel="noopener">WhatsApp</a>
+          <!-- TODO: замените на реальную ссылку MAX -->
+          <a href="https://max.ru/" class="btn btn--social btn--max" target="_blank" rel="noopener">MAX</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">У Степана</div>
+      <div class="footer__copy">© <span id="year"></span> Автосервис «У Степана». Все права защищены.</div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
